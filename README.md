@@ -32,18 +32,3 @@ A data abstraction module engineered to query, cache, and mutate persistent tabl
 ### 3. `SudokuFrame & Interactive Client`
 An asynchronous graphical dashboard built on the Swing architecture to map out cell updates in real time.
 * **Event-Driven Grid Mutations:** Decouples heavy computational matrix processing from the main UI thread to ensure continuous responsiveness during complex multi-solution queries.
-
----
-
-## Usage & Deployment Execution
-
-The architecture runs natively on standard Java runtimes with zero external compilation dependencies.
-
-### Algorithmic Execution
-To run the automated constraint satisfaction solver via the terminal:
-```bash
-# Compile solver source trees
-javac -d bin src/sudoku/**/*.java
-
-# Execute main solver test runner
-java -cp bin sudoku.SudokuMain
